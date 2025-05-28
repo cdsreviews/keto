@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Weight Loss Supplements of 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <style>
+      .status {
+            color: block;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: fit-content;
+            gap: 16px;
+        }
+        .check-marks {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-color: green;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 16px;
+        }
+        .content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 8px;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner {
+            background-color: #4CAF50; /* 更改背景色为绿色 */
+            color: #FFFFFF; /* 更改文字颜色为白色 */
+            text-align: center;
+            padding: 5px; /* 增加内边距 */
+            margin-bottom: 20px;
+            font-size: 18px; /* 增大字体 */
+            font-weight: bold;
+            border-radius: 8px; /* 添加圆角 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+        }
+
+        .product-ranking {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .logo-container .center-logo {
+        max-width: 30% !important; /* 使用!important提高优先级，确保Logo的最大宽度不受.content img样式影响 */
+        height: auto;
+    }
+  
+    .product-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 20px 1px rgb(84 84 84 / 30%);
+      margin-bottom: 30px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      position: relative;
+      box-sizing: border-box;
+    }
+    .product-best {
+      margin: 0;
+      padding: 20px 16px;
+      background: #FFD700;
+      color: #000000;
+      text-align: center;
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+      font-size: 1.3em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border: none;
+      box-shadow: none;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .product-best::before {
+      content: "\1F3C6";
+      font-size: 1.3em;
+      margin-right: 8px;
+      vertical-align: middle;
+      filter: none;
+    }
+    .product-best.mobile-layout {
+      display: flex;
+      margin-top: 16px;
+      padding: 14px 8px;
+      background: #FFD700;
+      color: #7c5a00;
+      text-align: center;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      font-size: 1em;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border: none;
+      box-shadow: none;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+    }
+    .product-best.mobile-layout::before {
+      content: "\1F3C6";
+      font-size: 1.1em;
+      margin-right: 6px;
+      vertical-align: middle;
+      filter: none;
+    }
+  
+    .first-place {
+      border: 4px solid #3bd11c; /* 第一名的边框颜色 */
+    }
+  
+    /* 排名序号 */
+    .ranking-number {
+      font-size: 24px;
+      font-weight: 700;
+      position: absolute;
+      top: -18px;
+      left: -10px;
+      color: #fff;
+      background: #2563eb;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2.5px solid #2563eb;
+      letter-spacing: 0.5px;
+      z-index: 2;
+      box-shadow: none;
+      transition: none;
+    }
+    .ranking-number:hover {
+      background: #1d4ed8;
+      border-color: #1d4ed8;
+    }
+    @media (min-width: 769px) {
+      .ranking-number {
+        font-size: 28px;
+        width: 54px;
+        height: 54px;
+        top: -28px;
+        left: -18px;
+        border-width: 3px;
+      }
+    }
+  
+    /* 控制每个部分的占比 */
+    .product-section {
+      padding: 10px;
+      box-sizing: border-box;
+      border-right: 1px solid #ddd;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .product-section:last-child {
+      border-right: none; /* 移除最后一个部分的右边框 */
+    }
+  
+  .product-section:nth-child(2) {
+      flex: 0 0 20%; /* 设置product-image占比30% */
+  }
+  
+  .product-section:nth-child(3) {
+      flex: 1; /* 设置product-info占比余下的 */
+  }
+  
+  .product-section:nth-child(4) {
+      flex: 0 0 25%; /* 设置product-rating占比30% */
+  }
+  
+    .product-image {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; /* 添加此行以确保图片居中对齐 */
+    }
+  
+    .product-image img {
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .product-info {
+      flex: 1; /* 让product-info占据剩余的可用空间 */
+      margin-left: 20px;
+      text-align: center;
+      padding: 10px; /* 添加内边距 */
+      box-sizing: border-box; /* 确保内边距和边框包含在高度和宽度内 */
+      height: 100%; /* 确保高度覆盖整个父容器 */
+    }
+  
+    .product-info::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: #ddd; /* 边框颜色 */
+    }
+  
+    .product-info h3 {
+      margin: 0 0 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .product-description {
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+      column-count: 2; /* 设置为两列布局 */
+    }
+  
+    .product-description li {
+      display: flex;
+      padding: 5px; /* 添加内边距 */
+      margin-bottom: 5px; /* 添加底部外边距 */
+    }
+  
+    .checkmark {
+      color: green;
+      margin-right: 8px;
+    }
+  
+    .product-rating {
+     
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+  
+    .stars i {
+      font-size: 30px;
+      color: #FFD700;
+      cursor: pointer;
+    }
+  
+    .stars i:hover {
+      color: #FFB700;
+    }
+  
+    .buy-button {
+      width: 90%;
+      padding: 15px 15px;
+      background-color: #4CAF50;
+      color: white;
+      top: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    }
+  
+    .buy-button:hover {
+      background-color: #45a049;
+    }
+  
+    /* 最好的标记 */
+    .best-label {
+      position: absolute;
+      top: 10px;
+      right: 2px;
+    }
+  
+    .product-item .best-label img {
+        height: 42px !important; /* 使用!important提高优先级，确保样式生效 */
+        margin-top: -25px;
+    }
+  
+    .product-rating h1 {
+      margin: 0; /* 移除默认的上下间距 */
+      font-size: 60px;
+    }
+  
+    .product-rating p {
+      margin: 0; /* 设置 p 标签的上间距为 5px，去除下间距 */
+    }
+    .product-best.mobile-layout{
+    display: none;
+    }
+  
+    @media (max-width: 768px) {
+      .product-item {
+        display: none; /* 隐藏桌面端的布局 */
+      }
+      
+      .product-rating {
+        flex: 0 0 50%; /* 20% 占比 */
+        margin-top: 10px;
+        text-align: center;
+      }
+      .product-image {
+        flex: 0 0 50%; /* 20% 占比 */
+        border-right: 1px solid #ddd;
+      }
+      .mobile-layout {
+        display: block; /* 显示移动端的布局 */
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        position: relative;
+      }
+  
+      .mobile-image-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding-bottom: 10px; /* 添加内边距 */
+      }
+  
+      .mobile-layout h3 {
+        text-align: center;
+        margin: 10px 0 10px 0;
+        padding-bottom: 10px; /* 添加内边距 */
+        border-bottom: 1px solid #ddd;
+      }
+  
+      .mobile-layout .product-description {
+        text-align: left;
+        margin-bottom: 10px;
+        column-count: 1;
+        padding-bottom: 10px; /* 添加内边距 */
+      }
+  
+      .mobile-layout .buy-button {
+        display: block;
+        width: 100%;
+        top:0px;
+      }
+  
+      .ranking-number {
+        font-size: 24px;
+        font-weight: bold;
+        position: absolute;
+        top: -20px;
+        left: -10px;
+        color: #004cdd;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #004cdd;
+      }
+      .product-description li {
+      padding: 1px; /* 添加内边距 */
+    }
+  
+      .best-label {
+        position: absolute;
+        top: 10px;
+        right: 2px;
+      }
+      .product-item .best-label img {
+        height: 30px;
+      }
+      .product-best{
+     display: none; 
+    }
+    .product-best.mobile-layout{
+      display: block;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #FFD700;
+      color: #000000;
+      text-align: center;
+      border-top-left-radius: 10px;  /* 左上角圆弧 */
+      border-top-right-radius: 10px; /* 右上角圆弧 */
+      
+    }
+     
+    }
+    
+  
+    @media (min-width: 769px) {
+      .mobile-layout {
+        display: none; /* 隐藏移动端的布局 */
+      }
+    }
+  
+    .mobile-layout.first-place {
+      border: 4px solid #3bd11c; /* 应用第一名的边框颜色 */
+    }
+  
+    .content h2, .content h3 {
+        color: #2c3e50; /* 更改标题颜色为深蓝色 */
+    }
+    .content img, img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .customer-reviews {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 40px;
+    }
+    .customer-reviews h3 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+    .review {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-left: 4px solid #4CAF50;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    .review strong {
+        display: block;
+        margin-top: 10px;
+        color: #555;
+    }
+    /* Enhance modal style */
+    .modal-content {
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .modal-header {
+        background-color: #4CAF50;
+        color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .modal-footer {
+        border-top: none;
+    }
+    /* Enhance Results and Order sections */
+    h3 {
+        color: #4CAF50;
+        margin-top: 30px;
+    }
+    ol {
+        padding-left: 20px;
+        list-style-type: decimal;
+    }
+    ol li {
+        margin-bottom: 10px;
+    }
+    .results-section, .order-section {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    /* Center the modal on the screen */
+    .modal-dialog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    /* Ensure the close button works */
+    .close {
+        cursor: pointer;
+    }
+    /* Adjust modal to not cover the entire page */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        z-index: 1050;
+    }
+    .modal-dialog {
+        margin: 30px auto;
+    }
+    @media (max-width: 768px) {
+        .order-section {
+            padding: 10px; /* 减少内边距以适应小屏幕 */
+            font-size: 14px; /* 调整字体大小 */
+        }
+        .order-section ol {
+            padding-left: 15px; /* 减少列表的左边距 */
+        }
+        .order-section ol li {
+            margin-bottom: 8px; /* 减少列表项的底部外边距 */
+        }
+    }
+    .order-section {
+        max-width: 100%; /* 确保内容不超出屏幕宽度 */
+        overflow-x: auto; /* 允许水平滚动 */
+    }
+    .center-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .discount-tooltip {
+        display: block;
+        margin: 10px auto 0 auto;
+        max-width: 90vw;
+        white-space: normal;
+        font-size: 13px;
+        padding: 15px 10px;
+        background-color: #fff8e1; /* 柔和黄色 */
+        color: #1900ff;
+        border-radius: 8px;
+        font-weight: bold;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 2px dashed #ffcc00; /* 虚线边框 */
+        text-align: center;
+    }
+    .logo-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+   
+
+    @media (max-width: 768px) {
+        .center-logo {
+            width: 60%; /* 在手机端进一步调整Logo大小 */
+        }
+        .product-item.mobile-layout,
+        .product-item.mobile-layout.first-place {
+            position: relative;
+        }
+        .discount-tooltip {
+            display: block;
+            margin: 10px auto 0 auto;
+            max-width: 90vw;
+            white-space: normal;
+            font-size: 15px;
+            padding: 15px 10px;
+            background-color: #fff8e1;
+            color: #1900ff;
+            border-radius: 8px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px dashed #ffcc00;
+            text-align: center;
+        }
+    }
+    .results-section {
+      width: 100%;
+      box-sizing: border-box;
+      word-break: break-word;
+    }
+    @media (max-width: 768px) {
+      .content {
+        padding: 4px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .results-section {
+        padding: 0 2vw;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .buy-button {
+        width: 100% !important;
+        min-width: 0;
+        top:0px;
+        box-sizing: border-box;
+        word-break: break-word;
+      }
+      .intro-section {
+        padding: 0 2vw;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      h2, h3, h4 {
+        word-break: break-word;
+      }
+      a {
+        word-break: break-all;
+      }
+    }
+    .status-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2px;
+    }
+    .status-name {
+        font-weight: bold;
+        font-size: 1.08em;
+        color: #2c3e50;
+        margin-bottom: 2px;
+    }
+    .status-desc {
+        font-size: 0.98em;
+        color: #666;
+        line-height: 1.5;
+    }
+    .status-update {
+        font-size: 0.92em;
+        color: #999;
+        margin-top: 4px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Remove Welcome Modal -->
+    <!-- Product 1 Modal -->
+    <div id="product1Modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> <i class="fa fa-clock-o" aria-hidden="true"></i> LIMITED TIME</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <img src="style/Keto Glow.jpg" alt="Keto Glow" style="width:50%; margin-bottom: 15px;">
+                    <p>Get 70% off today!</p>
+                    <p>Buy Keto Glow Detox Foot Patch now and get 70% off the original price.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="../click/1" class="buy-button" style="text-align: center; width: 100%; box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;">CLICK HERE TO SAVE NOW <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="logo-container">
+            <img src="style/logo.png" alt="Logo" class="center-logo">
+        </div>
+        <div class="banner"><h1>Top 5 Best Weight Loss Supplements Under $20 in 2025</h1>
+          <p>Did you know that most weight loss supplements don't work? We'll help you pick one that does.</p>
+        </div>
+        <div class="status">
+          <img src="style/doctor.png" alt="doctor" style="width:48px;height:48px;border-radius:50%;object-fit:cover;">
+          
+          <div class="status-info">
+            <div class="status-name">Matthew Taylor, Ph.D.</div>
+            <div class="status-desc">Matthew Taylor, Ph.D., RD, LD, is an assistant professor in the Department of Dietetics and Nutrition at KU Medical Center. Currently serves as instructor for course DN 818 Seminar in Dietetics and Nutrition II in the master's degree program. He joined the faculty at KU Medical Center in September 2019.</div>
+            <div class="status-update"><span class="check-marks">&#10003;</span>&nbsp;&nbsp;Last updated: <span id="currentDate"></span></div>
+          </div>
+        </div>
+        <br>
+        
+        <h4 style="display:none"></h4>
+        <div class="intro-section" style="max-width: 100%; margin: 0 auto 20px auto; line-height: 1.7; font-size: 1.08em; color: #2c3e50;">
+          <img src="style/back.jpg" alt="backimg">
+          <p>There are thousands of fat-loss pills on the market today. Sadly, most are absolutely useless. Only a few contain ingredients that are backed up by clinical research. And many do nothing at all.</p>
+          <p>When you do eventually find a truly effective fat-scorching product, the weight loss results are incredible.</p>
+          <p><strong>A great product doesn't just speed up your metabolic rate.</strong> It also gives you a huge energy kick to help you find the motivation to both eat healthy and work out. It gives you a massive mood boost to keep you away from emotional junk food binges. And it suppresses your appetite to stop hunger and cravings.</p>
+          <p>In short, it can make losing weight easy. But you need to find the right one.</p>
+          <p style="font-weight: bold; color: #2563eb;">That's where we come in. We've independently tested many of the best rated fat-loss pills on the market today.</p>
+          <p>Below, you'll find the five most effective available today.</p>
+        </div>
+        <h2>We've compiled a list of what we've found to be the top five products in this category, on the market today.</h2>
+        <br>
+        <p style="text-align: center;"><strong>We set extremely high testing standards for our readers so that you can feel confident in our recommendations. Our goal is to help more consumers save money and time through our professional team of experts.</strong></p>
+
+        <div class="product-ranking"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><!-- 排行框 -->
+          <!-- 产品1 -->
+          <div class="product-item first-place">
+            <div class="ranking-number">#1</div>
+            <div class="product-section">
+              <div class="product-image"><img src="style/ketoGlow.png" alt="Keto Glow" /></div>
+            </div>
+            <div class="product-section">
+              <div class="product-info">
+                <h3>Keto Glow</h3>
+                <ul class="product-description">
+                  <li><span class="checkmark">✅</span> Our #1 Most Popular Choice</li>
+                  <li><span class="checkmark">✅</span> Drastically speeds up your metabolism</li>
+                  <li><span class="checkmark">✅</span> Burns body fat at a rapid rate</li>
+                  <li><span class="checkmark">✅</span> Gives energy levels a major boost</li>
+                  <li><span class="checkmark">✅</span> Suppresses your appetite and cravings</li>
+                  <li><span class="checkmark">✅</span> Balances blood sugar levels</li>
+                  <li><span class="checkmark">✅</span> Contains an abundance of immune-boosting antioxidants</li>
+                  <li><span class="checkmark">✅</span> Improves your body confidence</li>
+                  <li><span class="checkmark">✅</span> Provides long-term benefits for sustainable weight loss</li>
+                  <li><span class="checkmark">✅</span> Offers a 60-day, money-back guarantee</li>
+                  <li><span class="checkmark">✅</span> There are no harmful side effects</li>
+                  <li><span class="checkmark">✅</span> Shipping is free if you buy 2 or more bottles</li>
+                  <li><span class="checkmark">✅</span> Numerous clinical studies support the product's efficacy</li>
+                  <li><span class="checkmark">✅</span> Active ingredients backed by scientific research</li>
+                  <li><span class="checkmark">✅</span> 98% of customers express satisfaction</li>
+                  <li><span class="checkmark">✅</span> Customers are not required to sign up for an auto-shipping delivery plan</li>
+                  <li><span class="checkmark">✅</span> Due to popularity, sometimes it's on backorder/sold out</li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-section">
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+                <h1>9.8</h1>
+                <h2>Excellent</h2>
+                <small class="text-muted">User Reviews (13,327)</small>
+                <a style="text-decoration: none; width: 100%; position: relative;" href="../click/1"> <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;"> VISIT SITE<i class="fa fa-arrow-right"></i> <div class="discount-tooltip">BUY 1 GET 1 FREE</div> </button> </a>
+              </div>
+            </div>
+            <div class="best-label"><img src="style/limited-offer-smaller.png" alt="Best" /></div>
+          </div>
+          <!-- 产品2 -->
+          <div class="product-item">
+            <div class="ranking-number">#2</div>
+            <div class="product-section">
+              <div class="product-image"><img src="style/KetoPhoria.png" alt="Keto Phoria" /></div>
+            </div>
+            <div class="product-section">
+              <div class="product-info">
+                <h3>Keto Phoria</h3>
+                <ul class="product-description">
+                  <li><span class="checkmark">✅</span> Features a full list of active ingredients</li>
+                  <li><span class="checkmark">✅</span> Contains natural, high-quality keto-friendly components</li>
+                  <li><span class="checkmark">✅</span> Helps support ketosis and fat-burning</li>
+                  <li><span class="checkmark">✅</span> Easy to take and tastes pleasant</li>
+                  <li><span class="checkmark">✅</span> Available in bundle deals with discounted pricing</li>
+                  <li><span class="checkmark">✅</span> Backed by many positive customer reviews</li>
+                  <li><span class="checkmark">✅</span> 90-day satisfaction guarantee available</li>
+                  <li><span class="checkmark">✅</span> Only available online, not sold in physical stores</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> No free sample or trial is available</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Lacks detailed explanation of each ingredient's function</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Limited transparency about the brand's background</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Results may vary and may require consistent use</li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-section">
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <h1>9.5</h1>
+                <h2>Very Good</h2>
+                <small class="text-muted">User Reviews (8,765)</small>
+                <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;" onclick="window.location.href='../click/2'">VISIT SITE<i class="fa fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- 产品3 -->
+          <div class="product-item">
+            <div class="ranking-number">#3</div>
+            <div class="product-section">
+              <div class="product-image"><img src="style/KetoCare.png" alt="Keto Care" /></div>
+            </div>
+            <div class="product-section">
+              <div class="product-info">
+                <h3>Keto Care</h3>
+                <ul class="product-description">
+                  <li><span class="checkmark">✅</span> Contains effective BHB ketones to trigger ketosis</li>
+                  <li><span class="checkmark">✅</span> Comes with a 60-day money-back guarantee</li>
+                  <li><span class="checkmark">✅</span> Offers a free trial for first-time users</li>
+                  <li><span class="checkmark">✅</span> Simple to incorporate into most keto diets</li>
+                  <li><span class="checkmark">✅</span> Boosts energy and mental focus during ketosis</li>
+                  <li><span class="checkmark">✅</span> Many users report visible weight loss within 4 weeks</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Free trial is linked to an automatic subscription</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> The full ingredient list is not disclosed</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Product is relatively expensive without promotions</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Limited manufacturer information publicly available</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> May require dietary and exercise adjustments for best results</li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-section">
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <h1>8.5</h1>
+                <h2>Good</h2>
+                <small class="text-muted">User Reviews (5,432)</small>
+                <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;" onclick="window.location.href='../click/3'">VISIT SITE<i class="fa fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- 产品4 -->
+          <div class="product-item">
+            <div class="ranking-number">#4</div>
+            <div class="product-section">
+              <div class="product-image"><img src="style/KetoKeepFit.png" alt="KeepFit Keto" /></div>
+            </div>
+            <div class="product-section">
+              <div class="product-info">
+                <h3>KeepFit Keto</h3>
+                <ul class="product-description">
+                  <li><span class="checkmark">✅</span> Lists core ingredients such as BHB salts</li>
+                  <li><span class="checkmark">✅</span> Designed to accelerate fat burning during ketosis</li>
+                  <li><span class="checkmark">✅</span> Discounts available on multi-bottle purchases</li>
+                  <li><span class="checkmark">✅</span> Helps reduce cravings and supports energy levels</li>
+                  <li><span class="checkmark">✅</span> Reported to improve focus and metabolism in early users</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Does not offer a trial or sample program</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> No public clinical data shared on effectiveness</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Ingredient explanations are minimal</li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-section">
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <h1>7.8</h1>
+                <h2>Average</h2>
+                <small class="text-muted">User Reviews (4,321)</small>
+                <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;" onclick="window.location.href='../click/4'">VISIT SITE<i class="fa fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- 产品5 -->
+          <div class="product-item">
+            <div class="ranking-number">#5</div>
+            <div class="product-section">
+              <div class="product-image"><img src="style/BajaSlimKeto.png" alt="Baja Slim Keto" /></div>
+            </div>
+            <div class="product-section">
+              <div class="product-info">
+                <h3>Baja Slim Keto</h3>
+                <ul class="product-description">
+                  <li><span class="checkmark">✅</span> Full ingredient list is available on the official site</li>
+                  <li><span class="checkmark">✅</span> Comes with a generous 90-day return policy</li>
+                  <li><span class="checkmark">✅</span> Discounts available for bulk orders</li>
+                  <li><span class="checkmark">✅</span> May support appetite control and fat burning</li>
+                  <li><span class="checkmark">✅</span> Convenient capsule format for easy daily use</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Ingredient benefits are not thoroughly explained</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> No sample or trial option offered</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Money-back policy details are somewhat vague</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Requires consistent usage over weeks for noticeable effects</li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-section">
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <h1>7.1</h1>
+                <h2>Average</h2>
+                <small class="text-muted">User Reviews (3,210)</small>
+                <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;" onclick="window.location.href='../click/5'">VISIT SITE<i class="fa fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- 产品1重复引导 -->
+          <div class="product-best">Best Overall Keto Product</div>
+          <div class="product-item">
+            <div class="product-section" style="display: none;"> </div>
+            <div class="product-section">
+              <div class="product-image"><img src="style/ketoGlow.png" alt="Keto Glow" /></div>
+            </div>
+            <div class="product-section">
+              <div class="product-info">
+                <h3>Keto Glow</h3>
+                <ul class="product-description">
+                  <li><span class="checkmark">✅</span> Our #1 Most Popular Choice</li>
+                  <li><span class="checkmark">✅</span> Drastically speeds up your metabolism</li>
+                  <li><span class="checkmark">✅</span> Burns body fat at a rapid rate</li>
+                  <li><span class="checkmark">✅</span> Gives energy levels a major boost</li>
+                  <li><span class="checkmark">✅</span> Suppresses your appetite and cravings</li>
+                  <li><span class="checkmark">✅</span> Balances blood sugar levels</li>
+                  <li><span class="checkmark">✅</span> Contains an abundance of immune-boosting antioxidants</li>
+                  <li><span class="checkmark">✅</span> Improves your body confidence</li>
+                  <li><span class="checkmark">✅</span> Provides long-term benefits for sustainable weight loss</li>
+                  <li><span class="checkmark">✅</span> Offers a 60-day, money-back guarantee</li>
+                  <li><span class="checkmark">✅</span> There are no harmful side effects</li>
+                  <li><span class="checkmark">✅</span> Shipping is free if you buy 2 or more bottles</li>
+                  <li><span class="checkmark">✅</span> Numerous clinical studies support the product's efficacy</li>
+                  <li><span class="checkmark">✅</span> Active ingredients backed by scientific research</li>
+                  <li><span class="checkmark">✅</span> 98% of customers express satisfaction</li>
+                  <li><span class="checkmark">✅</span> Customers are not required to sign up for an auto-shipping delivery plan</li>
+                  <li><span class="checkmark" style="color: red;">❌</span> Due to popularity, sometimes it's on backorder/sold out</li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-section">
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+                <h1>9.8</h1>
+                <h2>Excellent</h2>
+                <small class="text-muted">User Reviews (13,327)</small>
+                <a style="text-decoration: none; width: 100%; position: relative;" href="../click/1"> <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;"> VISIT SITE <i class="fa fa-arrow-right"></i> <div class="discount-tooltip">BUY 1 GET 1 FREE</div></button> </a>
+              </div>
+            </div>
+            <div class="best-label"><img src="style/limited-offer-smaller.png" alt="Best" /></div>
+          </div>
+          <!-- 手机端产品1 -->
+          <div class="product-item mobile-layout first-place">
+            <div class="ranking-number">#1</div>
+            <h3>Keto Glow</h3>
+            <div class="mobile-image-rating">
+              <div class="product-image"><img src="style/ketoGlow.png" alt="Keto Glow" /></div>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+                <h1>9.8</h1>
+                <h2 style="font-size: 22px;">Excellent</h2>
+                <small class="text-muted">User Reviews (13,327)</small>
+              </div>
+            </div>
+            <ul class="product-description">
+              <li><span class="checkmark">✅</span> Our #1 Most Popular Choice</li>
+              <li><span class="checkmark">✅</span> Drastically speeds up your metabolism</li>
+              <li><span class="checkmark">✅</span> Burns body fat at a rapid rate</li>
+              <li><span class="checkmark">✅</span> Gives energy levels a major boost</li>
+              <li><span class="checkmark">✅</span> Suppresses your appetite and cravings</li>
+              <li><span class="checkmark">✅</span> Balances blood sugar levels</li>
+              <li><span class="checkmark">✅</span> Contains an abundance of immune-boosting antioxidants</li>
+              <li><span class="checkmark">✅</span> Improves your body confidence</li>
+              <li><span class="checkmark">✅</span> Provides long-term benefits for sustainable weight loss</li>
+              <li><span class="checkmark">✅</span> Offers a 60-day, money-back guarantee</li>
+              <li><span class="checkmark">✅</span> There are no harmful side effects</li>
+              <li><span class="checkmark">✅</span> Shipping is free if you buy 2 or more bottles</li>
+              <li><span class="checkmark">✅</span> Numerous clinical studies support the product's efficacy</li>
+              <li><span class="checkmark">✅</span> Active ingredients backed by scientific research</li>
+              <li><span class="checkmark">✅</span> 98% of customers express satisfaction</li>
+              <li><span class="checkmark">✅</span> Customers are not required to sign up for an auto-shipping delivery plan</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Due to popularity, sometimes it's on backorder/sold out</li>
+            </ul>
+            <a style="text-decoration: none; width: 100%; position: relative;" href="../click/1"> <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;"> VISIT SITE<i class="fa fa-arrow-right"></i><div class="discount-tooltip">BUY 1 GET 1 FREE</div></button> </a>
+            <div class="best-label"><img src="style/limited-offer-smaller.png" alt="Best" /></div>
+          </div>
+          <!-- 手机端产品2 -->
+          <div class="product-item mobile-layout">
+            <div class="ranking-number">#2</div>
+            <h3>Keto Phoria</h3>
+            <div class="mobile-image-rating">
+              <div class="product-image"><img src="style/KetoPhoria.png" alt="Keto Phoria" /></div>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <h1>9.5</h1>
+                <h2 style="font-size: 22px;">Very Good</h2>
+                <small class="text-muted">User Reviews (8,765)</small>
+              </div>
+            </div>
+            <ul class="product-description">
+              <li><span class="checkmark">✅</span> Features a full list of active ingredients</li>
+              <li><span class="checkmark">✅</span> Contains natural, high-quality keto-friendly components</li>
+              <li><span class="checkmark">✅</span> Helps support ketosis and fat-burning</li>
+              <li><span class="checkmark">✅</span> Easy to take and tastes pleasant</li>
+              <li><span class="checkmark">✅</span> Available in bundle deals with discounted pricing</li>
+              <li><span class="checkmark">✅</span> Backed by many positive customer reviews</li>
+              <li><span class="checkmark">✅</span> 90-day satisfaction guarantee available</li>
+              <li><span class="checkmark">✅</span> Only available online, not sold in physical stores</li>
+              <li><span class="checkmark" style="color: red;">❌</span> No free sample or trial is available</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Lacks detailed explanation of each ingredient's function</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Limited transparency about the brand's background</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Results may vary and may require consistent use</li>
+            </ul>
+            <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;" onclick="window.location.href='../click/2'">VISIT SITE<i class="fa fa-arrow-right"></i></button>
+          </div>
+          <!-- 手机端产品3 -->
+          <div class="product-item mobile-layout">
+            <div class="ranking-number">#3</div>
+            <h3>Keto Care</h3>
+            <div class="mobile-image-rating">
+              <div class="product-image"><img src="style/KetoCare.png" alt="Keto Care" /></div>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <h1>8.5</h1>
+                <h2 style="font-size: 22px;">Good</h2>
+                <small class="text-muted">User Reviews (5,432)</small>
+              </div>
+            </div>
+            <ul class="product-description">
+              <li><span class="checkmark">✅</span> Contains effective BHB ketones to trigger ketosis</li>
+              <li><span class="checkmark">✅</span> Comes with a 60-day money-back guarantee</li>
+              <li><span class="checkmark">✅</span> Offers a free trial for first-time users</li>
+              <li><span class="checkmark">✅</span> Simple to incorporate into most keto diets</li>
+              <li><span class="checkmark">✅</span> Boosts energy and mental focus during ketosis</li>
+              <li><span class="checkmark">✅</span> Many users report visible weight loss within 4 weeks</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Free trial is linked to an automatic subscription</li>
+              <li><span class="checkmark" style="color: red;">❌</span> The full ingredient list is not disclosed</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Product is relatively expensive without promotions</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Limited manufacturer information publicly available</li>
+              <li><span class="checkmark" style="color: red;">❌</span> May require dietary and exercise adjustments for best results</li>
+            </ul>
+            <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;" onclick="window.location.href='../click/3'">VISIT SITE<i class="fa fa-arrow-right"></i></button>
+          </div>
+          <!-- 手机端产品4 -->
+          <div class="product-item mobile-layout">
+            <div class="ranking-number">#4</div>
+            <h3>KeepFit Keto</h3>
+            <div class="mobile-image-rating">
+              <div class="product-image"><img src="style/KetoKeepFit.png" alt="KeepFit Keto" /></div>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <h1>7.8</h1>
+                <h2 style="font-size: 22px;">Average</h2>
+                <small class="text-muted">User Reviews (4,321)</small>
+              </div>
+            </div>
+            <ul class="product-description">
+              <li><span class="checkmark">✅</span> Lists core ingredients such as BHB salts</li>
+              <li><span class="checkmark">✅</span> Designed to accelerate fat burning during ketosis</li>
+              <li><span class="checkmark">✅</span> Discounts available on multi-bottle purchases</li>
+              <li><span class="checkmark">✅</span> Helps reduce cravings and supports energy levels</li>
+              <li><span class="checkmark">✅</span> Reported to improve focus and metabolism in early users</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Does not offer a trial or sample program</li>
+              <li><span class="checkmark" style="color: red;">❌</span> No public clinical data shared on effectiveness</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Ingredient explanations are minimal</li>
+            </ul>
+            <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;" onclick="window.location.href='../click/4'">VISIT SITE<i class="fa fa-arrow-right"></i></button>
+          </div>
+          <!-- 手机端产品5 -->
+          <div class="product-item mobile-layout">
+            <div class="ranking-number">#5</div>
+            <h3>Baja Slim Keto</h3>
+            <div class="mobile-image-rating">
+              <div class="product-image"><img src="style/BajaSlimKeto.png" alt="Baja Slim Keto" /></div>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <h1>7.1</h1>
+                <h2 style="font-size: 22px;">Average</h2>
+                <small class="text-muted">User Reviews (3,210)</small>
+              </div>
+            </div>
+            <ul class="product-description">
+              <li><span class="checkmark">✅</span> Full ingredient list is available on the official site</li>
+              <li><span class="checkmark">✅</span> Comes with a generous 90-day return policy</li>
+              <li><span class="checkmark">✅</span> Discounts available for bulk orders</li>
+              <li><span class="checkmark">✅</span> May support appetite control and fat burning</li>
+              <li><span class="checkmark">✅</span> Convenient capsule format for easy daily use</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Ingredient benefits are not thoroughly explained</li>
+              <li><span class="checkmark" style="color: red;">❌</span> No sample or trial option offered</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Money-back policy details are somewhat vague</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Requires consistent usage over weeks for noticeable effects</li>
+            </ul>
+            <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;" onclick="window.location.href='../click/5'">VISIT SITE<i class="fa fa-arrow-right"></i></button>
+          </div>
+          <!-- 手机端重复引导 -->
+          <div class="product-best mobile-layout">Best Overall Winner</div>
+          <div class="product-item mobile-layout first-place">
+            <h3>Keto Glow</h3>
+            <div class="mobile-image-rating">
+              <div class="product-image"><img src="style/ketoGlow.png" alt="Keto Glow" /></div>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+                <h1>9.8</h1>
+                <h2 style="font-size: 22px;">Excellent</h2>
+                <small class="text-muted">User Reviews (13,327)</small>
+              </div>
+            </div>
+            <ul class="product-description">
+              <li><span class="checkmark">✅</span> Our #1 Most Popular Choice</li>
+              <li><span class="checkmark">✅</span> Drastically speeds up your metabolism</li>
+              <li><span class="checkmark">✅</span> Burns body fat at a rapid rate</li>
+              <li><span class="checkmark">✅</span> Gives energy levels a major boost</li>
+              <li><span class="checkmark">✅</span> Suppresses your appetite and cravings</li>
+              <li><span class="checkmark">✅</span> Balances blood sugar levels</li>
+              <li><span class="checkmark">✅</span> Contains an abundance of immune-boosting antioxidants</li>
+              <li><span class="checkmark">✅</span> Improves your body confidence</li>
+              <li><span class="checkmark">✅</span> Provides long-term benefits for sustainable weight loss</li>
+              <li><span class="checkmark">✅</span> Offers a 60-day, money-back guarantee</li>
+              <li><span class="checkmark">✅</span> There are no harmful side effects</li>
+              <li><span class="checkmark">✅</span> Shipping is free if you buy 2 or more bottles</li>
+              <li><span class="checkmark">✅</span> Numerous clinical studies support the product's efficacy</li>
+              <li><span class="checkmark">✅</span> Active ingredients backed by scientific research</li>
+              <li><span class="checkmark">✅</span> 98% of customers express satisfaction</li>
+              <li><span class="checkmark">✅</span> Customers are not required to sign up for an auto-shipping delivery plan</li>
+              <li><span class="checkmark" style="color: red;">❌</span> Due to popularity, sometimes it's on backorder/sold out</li>
+            </ul>
+            <a style="text-decoration: none; width: 100%; position: relative;" href="../click/1"> <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;"> VISIT SITE<i class="fa fa-arrow-right"></i><div class="discount-tooltip">BUY 1 GET 1 FREE</div></button> </a>
+            <div class="best-label"><img src="style/limited-offer-smaller.png" alt="Best" /></div>
+          </div>
+        </div>
+        
+        <h2>We bought and tested the best-selling Weight Loss Supplements — here's why <a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a> Weight Loss Supplements are number one.:</h2>
+        <p><img src="style/kag_pic1.jpg" alt="Keto Glow Foot Patch"></p>
+        <p>It's no surprise that we picked <a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a> as our #1 weight loss supplement out of numerous known brands. This is the only product that produced fast, safe weight loss for all our testers, even those who had a significant amount of weight to lose.</p>
+        <p>Product satisfaction was 98% with <a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a>, and people reported that they were not only able to reach their goal weight effortlessly but they managed to keep the weight off too!</p>
+        <p>Unlike some weight loss supplements that only provide one or two benefits, <a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a> gives consumers everything they need to overcome the obstacles many people face when dieting, such as overeating and cravings for high-carb, sugary foods.</p>
+        <p>All our testers reported that they weren't even tempted to snack in between meals and the reduction in their appetite meant they ate less throughout the day without ever feeling hungry. Also, thanks to their increased energy levels, they exercised more often and enjoyed longer workout sessions.</p>
+        <p>The amazing benefits of <a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a> don't stop there. Our testers successfully lost the weight that they had been trying to shed for years. Their self-esteem increased and they reported feeling more confident in themselves. All this led to a more positive mood, which in turn, kept them motivated to reach their goals without reverting to their old habits of overeating.</p>
+        <p><img src="style/kag_pic2.jpg" alt="Keto Glow Foot Patch"></p>
+        <p><a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a> contains a rich collection of clinically proven, natural key ingredients, including Chromium, Glucomannan, Green tea, Cocoa, Hoodia Gordonii, Biotin, and 5-HTP. As many of the formula ingredients also have antioxidant properties, they enhance overall health and support the immune system. It's important to note too, that this doctor-developed <a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a> formula contains no dangerous stimulants, and there have never been any reports of unpleasant side effects from customers. The fact that <a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a> is produced by Nucentix Labs should come as no surprise. They are a well-established, trusted name in the health supplement industry in the USA. They manufacture <a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a> in their high-tech facility, which follows all regulatory guidelines for safety.</p>
+        <p>The company offers a no-hassle, 60-day money-back guarantee on <a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a>, which proves how confident they are that the product will result in the fast, permanent weight loss their customers want. And, having conducted our thorough research and seen its incredible benefits firsthand, we have no hesitation in naming <a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank">Keto Glow</a> the best weight loss supplement of 2025!</p>
+        <p style="font-weight: bold; color: #2563eb;"><a href="../click/1/1" style="color:#2563eb; text-decoration:underline;" target="_blank"></a>Click here to Learn more about Keto Glow</a> &gt;&gt;&gt;</p>
+        
+        <br>
+        <h3>How to order:</h3>
+        <div class="order-section">
+            <ol>
+                <li>Visit the official Keto Glow website;</li>
+                <li>Select the number of items you want to purchase;</li>
+                <li>Enter your shipping details and payment method;</li>
+                <li>Sit back and relax while Keto Glow is delivered to your home!</li>
+            </ol>
+        </div>
+        <br>
+        <button class="buy-button" style="box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.8); position: relative;" onclick="window.location.href='../click/1'">Click here to Learn more about Keto Glow &gt;&gt;&gt;</button> 
+    </div>
+   
+  <footer style="background-color: #303030; padding: 20px; text-align: center; margin-top: 40px;">
+    <div style="display: inline-block;">
+        <a href="privacy.html" style="margin-right: 15px;">Privacy Policy</a>
+        <a href="terms.html" style="margin-right: 15px;">Terms of Use</a>
+        <a href="about.html" style="margin-right: 15px;">About Us</a>
+        <a href="advertising.html" style="margin-right: 15px;">Advertising</a>
+
+        <p style="color:#a2a2a2; padding-top: 20px;" >
+          This site is a free online resource that strives to offer helpful content and comparison features to its visitors. Please be advised that the operator of this site accepts advertising compensation from companies that appear on the site, and such compensation impacts the location and order in which the companies (and/or their products) are presented, and in some cases may also impact the rating that is assigned to them. To the extent that ratings appear on this site, such rating is determined by our subjective opinion and based on a methodology that aggregates our analysis of brand market share and reputation, each brand's conversion rates, the compensation paid to us, and general consumer interest. Company listings on this page DO NOT imply endorsement. Except as expressly set forth in our Terms of Use, all representations and warranties regarding the information presented on this page are disclaimed. The information, including pricing, which appears on this site is subject to change at any time.
+        </p>
+    </div>
+    <p style="margin-top: 10px; color: #a2a2a2;">Copyright © 2025 | All rights reserved.</p>
+</footer>
+    <!-- Default Statcounter code for 消费者评分
+https://latestconsumerreviews.com/ -->
+<script type="text/javascript">
+var sc_project=13113494; 
+var sc_invisible=1; 
+var sc_security="b099a71a"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13113494/0/b099a71a/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "lhy8u7wc2l");
+</script>
+<script>
+    $(document).ready(function() {
+        // 更新日期
+        function updateDate() {
+            const date = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = date.toLocaleDateString('de-DE', options);
+            document.getElementById('currentDate').textContent = formattedDate;
+        }
+        updateDate();
+    });
+</script>
+<script>
+  // 解码函数，处理双重编码等问题
+  function safeDecode(value) {
+      try {
+          // 尝试双重解码
+          const once = decodeURIComponent(value);
+          const twice = decodeURIComponent(once);
+          return twice;
+      } catch (e) {
+          try {
+              // 如果双重解码失败，退回一次解码
+              return decodeURIComponent(value);
+          } catch (err) {
+              // 解码失败则返回原始值
+              return value;
+          }
+      }
+  }
+
+  // 获取 URL 参数并尝试多层解码
+  function getURLParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      const rawValue = urlParams.get(name);
+      return rawValue ? safeDecode(rawValue) : null;
+  }
+
+  // 获取并处理参数
+  const utmTerm = getURLParameter('utm_term');
+  const gclid = getURLParameter('gclid');
+  const gbraid = getURLParameter('gbraid');
+
+  // 保存 utm_term
+  if (utmTerm) {
+      localStorage.setItem('utm_term', utmTerm);
+      console.log('UTM Term:', utmTerm);
+  }
+
+  // 保存 gclid，如果没有则保存 gbraid
+  if (gclid) {
+      localStorage.setItem('gclid', gclid);
+  } else if (gbraid) {
+      localStorage.setItem('gclid', gbraid);
+  }
+</script>

